@@ -129,7 +129,7 @@ function loop() {
 	for(let ball of balls) {
 		count += ball.exists ? 1 : 0;
 	}
-	score.innerHTML = 'Score: ' + (500 - count);
+	score.innerHTML = 'Score: ' + (100 - count);
 	if (window.innerWidth != width) {
 		width = canvas.width = window.innerWidth;
 	}
@@ -138,7 +138,7 @@ function loop() {
 	}
 	ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
  	ctx.fillRect(0, 0, width, height);
-	while (balls.length < 500) {
+	while (balls.length < 100) {
 		var ball = new Ball(
 			random(0,width),
       random(0,height),
